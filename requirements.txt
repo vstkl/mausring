@@ -1,0 +1,4 @@
+jupyterlab
+jupyterlab-git
+jupyterscad
+solidpython2
