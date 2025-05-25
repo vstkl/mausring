@@ -2,3 +2,4 @@ jupyterlab
 jupyterlab-git
 jupyterscad
 solidpython2
+jupyer-scad-kernel

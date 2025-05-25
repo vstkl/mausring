@@ -1,0 +1,189 @@
+{
+  "version": "7.0.0",
+  "components": [
+    {
+      "libItem": "ESP32-C3FH4",
+      "value": "ESP32-C3FH4",
+      "package": "QFN32",
+      "ref": "U1",
+      "pins": {
+        "1": "VDD3P3",
+        "2": "GPIO0",
+        "3": "VDD3P3",
+        "4": "VDD3P3",
+        "5": "VDD3P3",
+        "6": "SDA",
+        "7": "SCL",
+        "8": "GND",
+        "9": "GND",
+        "10": "GND",
+        "11": "GND",
+        "12": "GND",
+        "13": "GND",
+        "14": "RF",
+        "15": "GND",
+        "16": "GND",
+        "17": "VDD3P3",
+        "18": "VDD3P3_CPU",
+        "19": "GND",
+        "20": "GND",
+        "21": "VDD3P3",
+        "22": "VDD3P3",
+        "23": "TXD",
+        "24": "RXD",
+        "25": "GND",
+        "26": "GND",
+        "27": "GND",
+        "28": "GND",
+        "29": "GND",
+        "30": "GND",
+        "31": "GND",
+        "32": "GND"
+      }
+    },
+    {
+      "libItem": "MPU6050",
+      "value": "MPU6050",
+      "package": "TSSOP16",
+      "ref": "U2",
+      "pins": {
+        "1": "VCC",
+        "2": "GND",
+        "3": "SDA",
+        "4": "SCL",
+        "5": "AD0",
+        "6": "NC",
+        "7": "INT",
+        "8": "NC",
+        "9": "NC",
+        "10": "NC",
+        "11": "NC",
+        "12": "NC",
+        "13": "NC",
+        "14": "NC",
+        "15": "NC",
+        "16": "NC"
+      }
+    },
+    {
+      "libItem": "RES",
+      "value": "4.7k",
+      "package": "0603",
+      "ref": "R1"
+    },
+    {
+      "libItem": "RES",
+      "value": "4.7k",
+      "package": "0603",
+      "ref": "R2"
+    },
+    {
+      "libItem": "CAP",
+      "value": "0.1uF",
+      "package": "0603",
+      "ref": "C1"
+    },
+    {
+      "libItem": "CAP",
+      "value": "0.1uF",
+      "package": "0603",
+      "ref": "C2"
+    },
+    {
+      "libItem": "CAP",
+      "value": "10uF",
+      "package": "1206",
+      "ref": "C3"
+    },
+    {
+      "libItem": "AMS1117-3.3V",
+      "value": "AMS1117-3.3V",
+      "package": "SOT223",
+      "ref": "U3",
+      "pins": {
+        "1": "VIN",
+        "2": "GND",
+        "3": "VOUT"
+      }
+    }
+  ],
+  "nets": [
+    {
+      "name": "3.3V",
+      "connections": [
+        "U1:1",
+        "U1:3",
+        "U1:4",
+        "U1:5",
+        "U1:17",
+        "U1:18",
+        "U1:21",
+        "U1:22",
+        "U2:1",
+        "U3:3"
+      ]
+    },
+    {
+      "name": "GND",
+      "connections": [
+        "U1:8",
+        "U1:9",
+        "U1:10",
+        "U1:11",
+        "U1:12",
+        "U1:13",
+        "U1:15",
+        "U1:16",
+        "U1:19",
+        "U1:20",
+        "U1:25",
+        "U1:26",
+        "U1:27",
+        "U1:28",
+        "U1:29",
+        "U1:30",
+        "U1:31",
+        "U1:32",
+        "U2:2",
+        "U3:2",
+        "C3:2"
+      ]
+    },
+    {
+      "name": "SDA",
+      "connections": [
+        "U1:6",
+        "U2:3",
+        "R1:1"
+      ]
+    },
+    {
+      "name": "SCL",
+      "connections": [
+        "U1:7",
+        "U2:4",
+        "R2:1"
+      ]
+    },
+    {
+      "name": "AD0",
+      "connections": [
+        "U2:5",
+        "GND"
+      ]
+    },
+    {
+      "name": "VIN",
+      "connections": [
+        "U3:1",
+        "C3:1"
+      ]
+    },
+    {
+      "name": "RF",
+      "connections": [
+        "U1:14"
+      ]
+    }
+  ]
+}
