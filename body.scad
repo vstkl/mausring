@@ -12,7 +12,7 @@ union() {
 			}
 			rotate(a = [90, 0, 0]) {
 				translate(v = [-3.0, 0, 12.5]) {
-					cube(size = [6, 6, 2]);
+					cube(size = [6, 6, 1]);
 				}
 			}
 		}
