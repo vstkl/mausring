@@ -21,7 +21,7 @@ The inner ring shall contain chipsets and battery, providing
 
 2. Hall sensor - HAL3144E
 
-3. Brain of the device - ESP8648-H2/ESP32-C3FH4 - usage mostly defined by size of the chipset to fit in critically small space, allowing for maximal possible user comfort and eventually battery???
+3. Accelerometer - BMA423 by Bosch - used because I have [Watchy by SQFMI](https://github.com/sqfmi/Watchy) at my disposal, providing decent source code examples + good [documentation](https://github.com/vstkl/mousring/blob/master/datasheets/bma423.pdf) by manufacturer
 
 4. Battery - TBD 
 
