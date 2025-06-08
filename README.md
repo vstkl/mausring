@@ -10,3 +10,17 @@ So for sake of laziness and learning I've decided to try to make my ideal device
 
 current toolchain for 3d design is jupyter notebook, utilizing [jupyterscad](https://github.com/jreiberkyle/jupyterscad) and [solid2](https://github.com/jeff-dh/SolidPython), with some helpful tweaks to original [OpenSCAD](https://openscad.org/)
 for schematic and PCB design I'm using [EasyEDA Pro](https://pro.easyeda.com/editor) and parts included, eventually maybe with some extensions or community-defined parts. We will see.
+
+## hardware design
+
+Design is rather simple - two rings: inner and outer ring.
+
+The inner ring shall contain chipsets and battery, providing
+
+a) Accelerometer - provided by BMA423
+b) Hall sensor - HAL3144E
+c) Brain of the device - ESP8648-H2/ESP32-C3FH4 - usage mostly defined by size of the chipset to fit in critically small space, allowing for maximal possible user comfort and eventually battery
+d) Battery - TBD 
+  - I still have no idea how to power the device, probably it would be cool to include partial charging by thermoelectric effect
+  - Also the rotation could be eventually utilised to charge the device, allowing the magnetic pulses providing rotation data to the Hall sensor to allow for secondary function of providing inductive pulses allowing to charge the device(feasibility of such feature is TBD)
+  - Still, some small battery has to be included, best bet so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD 
