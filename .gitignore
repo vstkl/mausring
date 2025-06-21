@@ -1,4 +1,4 @@
 env/
 __pycache__/
 .gradio/
-.ipynp_checkpoints
+**/.ipynp_checkpoints
