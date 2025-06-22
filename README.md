@@ -3,7 +3,7 @@
 ## what and why
 
 Main idea is to create a mouse-like device in form factor of a ring, utilising accelerometer for movements with rotary outer ring allowing for scrolling through endless documentation and specification that we all eventually will face.
-The motivation behind this project is me being lazy to put my hand back on touchpad/mouse everytime I need to go to next page of the document while my hands are busy drinking coffee or whatever. 
+The motivation behind this project is me being lazy to put my hand back on touchpad/mouse everytime I need to go to next page of the document while my hands are busy drinking coffee or whatever.
 So for sake of laziness and learning I've decided to try to make my ideal device reality and surely, I will come across some obstacles so I will try my best to document lessons learned in the circuit development, in programming of the software and many more.
 
 ## dev toolchain
@@ -23,8 +23,8 @@ The inner ring shall contain chipsets and battery, providing
 
 3. Accelerometer - BMA423 by Bosch - used because I have [Watchy by SQFMI](https://github.com/sqfmi/Watchy) at my disposal, providing decent source code examples + good [documentation](https://github.com/vstkl/mousring/blob/master/datasheets/bma423.pdf) by manufacturer
 
-4. Battery - TBD 
+4. Battery - TBD
 
     - I still have no idea how to power the device, probably it would be cool to include partial charging by thermoelectric effect
     - Also the rotation could be eventually utilised to charge the device, allowing the magnetic pulses providing rotation data to the Hall sensor to allow for secondary function of providing inductive pulses allowing to charge the device(feasibility of such feature is TBD)
-    - Still, some small battery has to be included, best bet so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD 
+    - Still, some small battery has to be included, best bet so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD
