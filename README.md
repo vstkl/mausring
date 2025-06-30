@@ -17,14 +17,23 @@ Design is rather simple - two rings: inner and outer ring.
 
 The inner ring shall contain chipsets and battery, providing
 
-1. Brain of the device - ESP8648-H2/ESP32-C3FH4 - usage mostly defined by size of the chipset to fit in critically small space, allowing for maximal possible user comfort and eventually battery???
+1. Brain of the device - ESP8684-H2/ESP32-C3FH4 - usage mostly defined by size of the chipset to fit in critically small space, allowing for maximal possible user comfort and eventually battery???
 
-2. Hall sensor - HAL3144E
+2. IMU(Accelerometer, gyroscope, magnetometer) - #ICM20948, which is available in small enough package and provides excellent [documentation](https://github.com/vstkl/mousring/blob/master/datasheets/icm20948.pdf)
 
-3. Accelerometer - BMA423 by Bosch - used because I have [Watchy by SQFMI](https://github.com/sqfmi/Watchy) at my disposal, providing decent source code examples + good [documentation](https://github.com/vstkl/mousring/blob/master/datasheets/bma423.pdf) by manufacturer
-
-4. Battery - TBD
+3. Battery - TBD
 
     - I still have no idea how to power the device, probably it would be cool to include partial charging by thermoelectric effect
     - Also the rotation could be eventually utilised to charge the device, allowing the magnetic pulses providing rotation data to the Hall sensor to allow for secondary function of providing inductive pulses allowing to charge the device(feasibility of such feature is TBD)
     - Still, some small battery has to be included, best bet so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD
+
+## Work in progress Notes
+
+Initial idea to use BMA423 changed to use single chip providing magnetometer and accelerometer, as well as gyro, so after considering LSM303, lack of available dev boards made me look further, and I'm glad it did, because I came across #ICM20948, which is perfect for my use case, as well I managed to acquire dev board to have means to test firmware for it.
+
+Brain of the device shall remain the same so far, however I'm considering using other generic ESP32-C3, however I'd like to utilize RISC-V MCU, and since computational power is not an issue for my case, I'd like to adhere to that and embrace RISC-V, since I've dedicated significant amount of time to understand it.
+
+I've come accross m5stack gateway, and m5stack coreS3, which provide
+[schematic 1](https://github.com/vstkl/mousring/blob/master/datasheets/esp32h2_m5stack_gateway_reference.pdf)
+[schematic 2](https://github.com/vstkl/mousring/blob/master/datasheets/esp32s3_m5stack_gateway_imu_reference.pdf)
+for reference and inspiration on how to design #esp32 boards.
