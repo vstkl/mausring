@@ -25,7 +25,7 @@ The inner ring shall contain chipsets and battery, providing
 
     - I still have no idea how to power the device, probably it would be cool to include partial charging by thermoelectric effect
     - Also the rotation could be eventually utilised to charge the device, allowing the magnetic pulses providing rotation data to the Hall sensor to allow for secondary function of providing inductive pulses allowing to charge the device(feasibility of such feature is TBD)
-    - Still, some small battery has to be included, best bet so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD
+    - Still, some small battery has to be included, best option so far is a small LiFePo cell, based on research of [OuraRing](https://ouraring.com/), which uses 22mAh battery, similar battery should be sufficient #TBD
 
 ## Work in progress Notes
 
