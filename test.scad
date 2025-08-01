@@ -1,29 +1,13 @@
-$fn = 150;
- 
-size=10;
-w = 5;
-bearing_cut = 2;
-bear_h = w-bearing_cut;
-
-rotate_extrude(){
-
 difference() {
 	union() {
-		translate(v = [size, 0, 0]) {
-			square([w,w],center = true);
+		translate(v = [10.5, 0, 0]) {
+			cube(center = true, size = [5, 5, 1]);
 		}
-		translate(v = [2*size -2*bearing_cut
-		, 0, 0]) {
-			square([w,w
-			],center = true);
+		translate(v = [19.5, 0, 0]) {
+			cube(center = true, size = [5, 5, 1]);
 		}
 	}
-	
-
-
-translate(v = [size+bear_h,
-	0, 0]) {
-		square([w,bear_h],center=true);
+	translate(v = [15, 0, 0]) {
+		cylinder(center = true, h = 1, r1 = 5, r2 = 5);
 	}
-	
-}}
+}
