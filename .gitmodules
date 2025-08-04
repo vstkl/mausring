@@ -1,0 +1,3 @@
+[submodule "sw/icm20948-source"]
+	path = sw/icm20948-source
+	url = https://github.com/cybergear-robotics/icm20948

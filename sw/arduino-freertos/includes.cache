@@ -1,0 +1,52 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/cores/esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/variants/esp32"
+  },
+  {
+    "Sourcefile": "/home/m/.cache/arduino/sketches/C9EF74D83D05C66EF25B5DC5AE1D2DBC/sketch/icmrtos.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/libraries/SPI/src"
+  },
+  {
+    "Sourcefile": "/home/m/.cache/arduino/sketches/C9EF74D83D05C66EF25B5DC5AE1D2DBC/sketch/icmrtos.ino.cpp",
+    "Include": "ICM20948_WE.h",
+    "Includepath": "/home/m/Arduino/libraries/ICM20948_WE/src"
+  },
+  {
+    "Sourcefile": "/home/m/.cache/arduino/sketches/C9EF74D83D05C66EF25B5DC5AE1D2DBC/sketch/icmrtos.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/libraries/Wire/src"
+  },
+  {
+    "Sourcefile": "/home/m/.cache/arduino/sketches/C9EF74D83D05C66EF25B5DC5AE1D2DBC/sketch/icmrtos.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/libraries/SPI/src/SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/m/Arduino/libraries/ICM20948_WE/src/ICM20948_WE.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/m/Arduino/libraries/ICM20948_WE/src/xyzFloat.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/home/m/.arduino15/packages/esp32/hardware/esp32/3.3.0/libraries/Wire/src/Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
