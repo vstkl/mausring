@@ -1,0 +1,10 @@
+services:
+  esp-idf:
+    image: espressif/idf:latest
+    container_name: esp-idf-container
+    volumes:
+       - ./project:/project
+    tty: true
+    stdin_open: true
+    working_dir: /project
+    command: /bin/bash

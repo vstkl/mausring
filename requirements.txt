@@ -3,7 +3,14 @@ jupyterlab-git
 jupyterscad
 solidpython2
 jupyter-openscad-kernel
+jupyter_c_kernel
+jupyter_micropython_kernel
+jupyter-cpp-kernel
+arm-jupyter-kernel
+jupyter-kernel-install
 colorama
 codespell
 markdown
 gradio
+esptool
+

@@ -19,6 +19,8 @@
 #include "freertos/task.h"
 #include "nvs_flash.h"
 
+#include "icm20948.h"
+
 #if CONFIG_BT_NIMBLE_ENABLED
 #include "host/ble_hs.h"
 #include "nimble/nimble_port.h"

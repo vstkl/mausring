@@ -1,5 +1,3 @@
-# mousring
-
 ## what and why
 
 Main idea is to create a mouse-like device in form factor of a ring, utilising accelerometer for movements with rotary outer ring allowing for scrolling through endless documentation and specification that we all eventually will face.
@@ -37,3 +35,11 @@ I've come accross m5stack gateway, and m5stack coreS3, which provide
 [schematic 1](https://github.com/vstkl/mousring/blob/master/datasheets/esp32h2_m5stack_gateway_reference.pdf)
 [schematic 2](https://github.com/vstkl/mousring/blob/master/datasheets/esp32s3_m5stack_gateway_imu_reference.pdf)
 for reference and inspiration on how to design #esp32 boards.
+
+### SW
+
+so far the working solution is arduinoIDE, using [ICM20948_WE](https://github.com/wollewald/ICM20948_WE), which provide SPI interface and comfortable abstraction. The base is implemented using FreeRTOS, and so far I was able to implement system with tasks defined for comms, for IMU and other task doing blinky, for sake of some control, next step shall be changing blink parameters based on current status.
+
+## TODO:
+- [ ] implement setup as separate task and create initialization task
+- [ ] move sending BLE events into events triggered by IMU above treshold(TBD)
