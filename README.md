@@ -38,7 +38,13 @@ for reference and inspiration on how to design #esp32 boards.
 
 ### SW
 
-so far the working solution is arduinoIDE, using [ICM20948_WE](https://github.com/wollewald/ICM20948_WE), which provide SPI interface and comfortable abstraction. The base is implemented using FreeRTOS, and so far I was able to implement system with tasks defined for comms, for IMU and other task doing blinky, for sake of some control, next step shall be changing blink parameters based on current status.
+so far the working solution is arduinoIDE, using [ICM20948_WE](https://github.com/wollewald/ICM20948_WE), which provide SPI interface and comfortable abstraction. The base is implemented using FreeRTOS, and so far I yywas able to implement system with tasks defined for comms, for IMU and other task doing blinky, for sake of some control, next step shall be changing blink parameters based on current status. 
+
+another step was to implement solution in arduino that was capable of projeting the IMU data to gamepad x/y.
+next step shall be projecting this data into mouse movements
+this will include 
+ - translating 3D to 2D for the acquired data
+ - passing this data through compatibility layer/HAL to mouse HID
 
 ## TODO:
 - [ ] implement setup as separate task and create initialization task
