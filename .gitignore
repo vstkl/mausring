@@ -7,3 +7,5 @@ sw/.cache/**
 build/
 **/build.**/
 **/.cache/
+**/managed_components/
+**/components/
