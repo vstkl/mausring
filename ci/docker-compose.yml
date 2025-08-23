@@ -1,0 +1,22 @@
+# docker compose file for stack in portainer, 
+# assumes externally managed volume esp-idf
+
+services:
+  esp-idf:
+    # image: espressif/idf:release-v5.3
+    image: espressif/idf:release-v5.3
+    
+    volumes:
+       - ./project:/project
+       - esp-idf:/opt/esp/idf
+    devices:
+       - "/dev/ttyUSB0:/dev/ttyUSB0"
+    tty: true
+    stdin_open: true
+    working_dir: /project
+    command: /bin/bash 
+    
+    
+volumes:
+  esp-idf:
+    external: true
