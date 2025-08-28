@@ -10,11 +10,11 @@ state of the current prototype is
 
 ### connected pins
 
-| esp32 | icm   |
-| -     | -     |
-| 5     | scl   |
-| 18    | sdi   |
-| 19    | ncs   |
-| 21    | ad0   |
+| esp32 | icm   | esp8684   |
+| -     | -     | -         |
+| 5     | SCL   | 12        |
+| 18    | SDI   | 13        |
+| 19    | NCS   | 16        |
+| 21    | AD0   | 9         |
 
 scl sdi ncs ad0
